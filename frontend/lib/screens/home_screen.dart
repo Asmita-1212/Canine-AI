@@ -7,6 +7,7 @@ import 'add_case_screen.dart';
 import 'my_cases_screen.dart';
 import 'profile_screen.dart';
 import 'login_screen.dart';
+import 'symptom_chat_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   final Map<String, dynamic> user;
@@ -70,11 +71,16 @@ class _HomeScreenState extends State<HomeScreen> {
       selectedIndex: 4,
     );
   }
-
+  void _openSymptomChat() {
+  _openPage(
+    const SymptomChatScreen(),
+    selectedIndex: 0,
+  );
+}
   void _selectTab(int index) {
     switch (index) {
       case 0:
-        setState(() => _selectedIndex = 0);
+        _openSymptomChat();
         break;
       case 1:
         _openCases();
@@ -503,7 +509,7 @@ class _HomeScreenState extends State<HomeScreen> {
         description: 'Get answers about your dog’s symptoms.',
         cardColor: const Color(0xFFEAF8F2),
         iconColor: teal,
-        onTap: () => _showComingSoon('AI Chatbot'),
+        onTap: _openSymptomChat,
       ),
       _FeatureData(
         icon: Icons.assignment_rounded,
