@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:frontend/screens/splash_screen.dart';
+import 'package:frontend/screens/symptom_chat_screen.dart';
 
 void main() {
   runApp(const CanineCareApp());
