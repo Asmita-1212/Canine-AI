@@ -1,0 +1,280 @@
+
+QUESTION_TEXT = {
+    "en": {
+        "main_problem": "What is the main skin problem you have noticed?",
+        "itch_level": "How severe is your dog's itching?",
+        "body_area": "Which body areas are affected?",
+        "hair_loss_pattern": "What does the hair loss look like?",
+        "skin_look": "How does your dog's skin look?",
+        "fleas": "Have you noticed fleas on your dog?",
+        "paw_licking": "How often does your dog lick its paws?",
+        "ears": "Have you noticed any ear problems?",
+        "smell": "Is there an unusual smell from the skin?",
+        "spread": "Is the skin problem spreading?",
+        "onset": "When did the problem start?",
+        "others_affected": "Are other pets or people affected?",
+        "general_health": "How is your dog's general health?",
+        "coat_feel": "How does your dog's coat feel?",
+        "age_group": "What is your dog's age group?",
+        "season": "During which season is the problem more noticeable?",
+        "skin_look_detail": "Can you describe the skin changes more specifically?",
+        "hair_loss_detail": "Can you describe the hair loss more specifically?",
+        "body_area_detail": "Can you identify the affected body areas more precisely?",
+        "itch_level_detail": "Can you describe the itching more precisely?"
+    },
+
+    "hi": {
+        "main_problem": "आपने अपने कुत्ते की त्वचा में मुख्य समस्या क्या देखी है?",
+        "itch_level": "आपके कुत्ते को कितनी खुजली होती है?",
+        "body_area": "शरीर के कौन-कौन से हिस्से प्रभावित हैं?",
+        "hair_loss_pattern": "बाल किस प्रकार झड़ रहे हैं?",
+        "skin_look": "आपके कुत्ते की त्वचा कैसी दिखती है?",
+        "fleas": "क्या आपने अपने कुत्ते के शरीर पर पिस्सू देखे हैं?",
+        "paw_licking": "आपका कुत्ता अपने पंजे कितनी बार चाटता है?",
+        "ears": "क्या आपने कानों में कोई समस्या देखी है?",
+        "smell": "क्या त्वचा से असामान्य गंध आती है?",
+        "spread": "क्या त्वचा की समस्या फैल रही है?",
+        "onset": "यह समस्या कब शुरू हुई?",
+        "others_affected": "क्या अन्य पालतू जानवर या लोग भी प्रभावित हैं?",
+        "general_health": "आपके कुत्ते का सामान्य स्वास्थ्य कैसा है?",
+        "coat_feel": "आपके कुत्ते के बाल छूने पर कैसे महसूस होते हैं?",
+        "age_group": "आपके कुत्ते की उम्र किस श्रेणी में आती है?",
+        "season": "किस मौसम में यह समस्या अधिक दिखाई देती है?",
+        "skin_look_detail": "क्या आप त्वचा में बदलाव के बारे में विस्तार से बता सकते हैं?",
+        "hair_loss_detail": "क्या आप बाल झड़ने के तरीके के बारे में विस्तार से बता सकते हैं?",
+        "body_area_detail": "क्या आप प्रभावित हिस्सों की पहचान अधिक स्पष्ट रूप से कर सकते हैं?",
+        "itch_level_detail": "क्या आप खुजली की गंभीरता के बारे में और बता सकते हैं?"
+    },
+
+    "mr": {
+        "main_problem": "तुमच्या कुत्र्याच्या त्वचेवर तुम्हाला कोणती मुख्य समस्या दिसली?",
+        "itch_level": "तुमच्या कुत्र्याला किती खाज येते?",
+        "body_area": "शरीराचे कोणते भाग प्रभावित झाले आहेत?",
+        "hair_loss_pattern": "केस कोणत्या प्रकारे गळत आहेत?",
+        "skin_look": "तुमच्या कुत्र्याची त्वचा कशी दिसते?",
+        "fleas": "तुम्हाला कुत्र्याच्या अंगावर पिसू दिसले आहेत का?",
+        "paw_licking": "तुमचा कुत्रा त्याचे पंजे किती वेळा चाटतो?",
+        "ears": "कानांमध्ये काही समस्या दिसली आहे का?",
+        "smell": "त्वचेतून असामान्य वास येतो का?",
+        "spread": "त्वचेची समस्या पसरत आहे का?",
+        "onset": "ही समस्या कधी सुरू झाली?",
+        "others_affected": "इतर पाळीव प्राणी किंवा माणसेही प्रभावित आहेत का?",
+        "general_health": "तुमच्या कुत्र्याचे एकूण आरोग्य कसे आहे?",
+        "coat_feel": "तुमच्या कुत्र्याच्या केसांना स्पर्श केल्यावर ते कसे वाटतात?",
+        "age_group": "तुमच्या कुत्र्याचे वय कोणत्या गटात येते?",
+        "season": "कोणत्या ऋतूमध्ये ही समस्या जास्त दिसते?",
+        "skin_look_detail": "त्वचेतील बदलांबद्दल तुम्ही अधिक सांगू शकता का?",
+        "hair_loss_detail": "केस गळण्याच्या प्रकाराबद्दल अधिक सांगू शकता का?",
+        "body_area_detail": "प्रभावित भाग अधिक स्पष्टपणे सांगू शकता का?",
+        "itch_level_detail": "खाज किती तीव्र आहे हे अधिक स्पष्ट करू शकता का?"
+    }
+}
+
+
+OPTION_LABELS = {
+    "en": {
+        "itching": "Itching",
+        "hair_loss": "Hair loss",
+        "bumps_pus": "Bumps or pus",
+        "smell_greasy": "Bad smell or greasy skin",
+        "wet_sore": "Wet sores",
+        "flaky_crusty": "Flaky or crusty skin",
+        "none": "None",
+        "mild": "Mild",
+        "moderate": "Moderate",
+        "severe": "Severe",
+        "face": "Face",
+        "ears": "Ears",
+        "paws": "Paws",
+        "belly_groin": "Belly or groin",
+        "back_tail_base": "Back or tail base",
+        "legs": "Legs",
+        "neck": "Neck",
+        "whole_body": "Whole body",
+        "round_patches": "Round patches",
+        "patchy_irregular": "Irregular patches",
+        "around_eyes_face": "Around eyes or face",
+        "all_over_thinning": "Overall thinning",
+        "red": "Red",
+        "red_bumps_pus": "Red bumps or pus",
+        "dry_scaly": "Dry or scaly",
+        "crusty_scabby": "Crusty or scabby",
+        "dark_thick": "Dark or thickened",
+        "wet_oozing": "Wet or oozing",
+        "normal": "Normal",
+        "yes": "Yes",
+        "no": "No",
+        "mild": "Mild",
+        "strong_musty": "Strong or musty",
+        "greasy": "Greasy",
+        "dry_flaky": "Dry or flaky",
+        "red_itchy": "Red or itchy",
+        "smelly_discharge": "Bad smell or discharge",
+        "sometimes": "Sometimes",
+        "constantly": "Constantly",
+        "sudden_days": "Suddenly, within days",
+        "gradual_weeks": "Gradually, over weeks",
+        "months_recurring": "Recurring over months",
+        "slowly": "Slowly",
+        "fast": "Quickly",
+        "other_pets": "Other pets",
+        "humans": "Humans",
+        "both": "Both pets and humans",
+        "tired_or_off_food": "Tired or eating less",
+        "puppy": "Puppy",
+        "adult": "Adult",
+        "senior": "Senior",
+        "summer_monsoon": "Summer or monsoon",
+        "winter": "Winter",
+        "all_year": "Throughout the year"
+    },
+
+    "hi": {
+        "itching": "खुजली",
+        "hair_loss": "बाल झड़ना",
+        "bumps_pus": "दाने या मवाद",
+        "smell_greasy": "बदबू या तैलीय त्वचा",
+        "wet_sore": "गीले घाव",
+        "flaky_crusty": "पपड़ीदार त्वचा",
+        "none": "कोई नहीं",
+        "mild": "हल्की",
+        "moderate": "मध्यम",
+        "severe": "बहुत तेज",
+        "face": "चेहरा",
+        "ears": "कान",
+        "paws": "पंजे",
+        "belly_groin": "पेट या जांघों के बीच का भाग",
+        "back_tail_base": "पीठ या पूंछ का आधार",
+        "legs": "पैर",
+        "neck": "गर्दन",
+        "whole_body": "पूरा शरीर",
+        "round_patches": "गोल धब्बों में",
+        "patchy_irregular": "अनियमित धब्बों में",
+        "around_eyes_face": "आंखों या चेहरे के आसपास",
+        "all_over_thinning": "पूरे शरीर में बाल पतले होना",
+        "red": "लाल",
+        "red_bumps_pus": "लाल दाने या मवाद",
+        "dry_scaly": "सूखी या पपड़ीदार",
+        "crusty_scabby": "खुरदरी या पपड़ी वाली",
+        "dark_thick": "गहरी या मोटी त्वचा",
+        "wet_oozing": "गीली या तरल पदार्थ निकलने वाली",
+        "normal": "सामान्य",
+        "yes": "हाँ",
+        "no": "नहीं",
+        "strong_musty": "तेज या सीलन जैसी गंध",
+        "greasy": "तैलीय",
+        "dry_flaky": "सूखे या परतदार",
+        "red_itchy": "लाल या खुजली वाले",
+        "smelly_discharge": "बदबू या स्राव",
+        "sometimes": "कभी-कभी",
+        "constantly": "लगातार",
+        "sudden_days": "अचानक, कुछ दिनों में",
+        "gradual_weeks": "धीरे-धीरे, कुछ हफ्तों में",
+        "months_recurring": "कई महीनों से बार-बार",
+        "slowly": "धीरे-धीरे",
+        "fast": "तेजी से",
+        "other_pets": "अन्य पालतू जानवर",
+        "humans": "इंसान",
+        "both": "पालतू जानवर और इंसान दोनों",
+        "tired_or_off_food": "थका हुआ या कम खाना खाना",
+        "puppy": "छोटा पिल्ला",
+        "adult": "वयस्क",
+        "senior": "बूढ़ा कुत्ता",
+        "summer_monsoon": "गर्मी या मानसून",
+        "winter": "सर्दी",
+        "all_year": "पूरे साल"
+    },
+
+    "mr": {
+        "itching": "खाज",
+        "hair_loss": "केस गळणे",
+        "bumps_pus": "पुरळ किंवा पू",
+        "smell_greasy": "दुर्गंधी किंवा तेलकट त्वचा",
+        "wet_sore": "ओले व्रण",
+        "flaky_crusty": "खपली किंवा पापुद्रे असलेली त्वचा",
+        "none": "काहीही नाही",
+        "mild": "कमी",
+        "moderate": "मध्यम",
+        "severe": "खूप जास्त",
+        "face": "चेहरा",
+        "ears": "कान",
+        "paws": "पंजे",
+        "belly_groin": "पोट किंवा मांडीजवळील भाग",
+        "back_tail_base": "पाठ किंवा शेपटीचा सुरुवातीचा भाग",
+        "legs": "पाय",
+        "neck": "मान",
+        "whole_body": "संपूर्ण शरीर",
+        "round_patches": "गोलाकार ठिकाणी",
+        "patchy_irregular": "अनियमित ठिकाणी",
+        "around_eyes_face": "डोळ्यांभोवती किंवा चेहऱ्यावर",
+        "all_over_thinning": "संपूर्ण शरीरावरील केस विरळ होणे",
+        "red": "लाल",
+        "red_bumps_pus": "लाल पुरळ किंवा पू",
+        "dry_scaly": "कोरडी किंवा पापुद्रे असलेली",
+        "crusty_scabby": "खपली किंवा खरूज असलेली",
+        "dark_thick": "गडद किंवा जाड झालेली",
+        "wet_oozing": "ओलसर किंवा स्त्राव येणारी",
+        "normal": "सामान्य",
+        "yes": "होय",
+        "no": "नाही",
+        "strong_musty": "तीव्र किंवा कुबट वास",
+        "greasy": "तेलकट",
+        "dry_flaky": "कोरडे किंवा पापुद्रे असलेले",
+        "red_itchy": "लाल किंवा खाज येणारे",
+        "smelly_discharge": "दुर्गंधी किंवा स्त्राव",
+        "sometimes": "कधीकधी",
+        "constantly": "सतत",
+        "sudden_days": "अचानक, काही दिवसांत",
+        "gradual_weeks": "हळूहळू, काही आठवड्यांत",
+        "months_recurring": "काही महिन्यांपासून वारंवार",
+        "slowly": "हळूहळू",
+        "fast": "जलद",
+        "other_pets": "इतर पाळीव प्राणी",
+        "humans": "माणसे",
+        "both": "पाळीव प्राणी आणि माणसे दोन्ही",
+        "tired_or_off_food": "थकलेला किंवा कमी खाणारा",
+        "puppy": "लहान पिल्लू",
+        "adult": "प्रौढ",
+        "senior": "वृद्ध",
+        "summer_monsoon": "उन्हाळा किंवा पावसाळा",
+        "winter": "हिवाळा",
+        "all_year": "वर्षभर"
+    }
+}
+
+
+def translate_question(question, language="en"):
+
+    if language not in QUESTION_TEXT:
+        language = "en"
+
+    question_id = question["id"]
+
+    translated_text = QUESTION_TEXT[language].get(
+        question_id,
+        question["text"]
+    )
+
+    translated_options = []
+
+    for value, label in question.get("options", []):
+
+        translated_label = OPTION_LABELS[language].get(
+            str(value),
+            OPTION_LABELS["en"].get(str(value), label)
+            if language == "en"
+            else label
+        )
+
+        translated_options.append({
+            "value": value,
+            "label": translated_label
+        })
+
+    return {
+        "id": question_id,
+        "text": translated_text,
+        "options": translated_options,
+        "multi": question.get("multi", False),
+        "required": question.get("required", False)
+    }
