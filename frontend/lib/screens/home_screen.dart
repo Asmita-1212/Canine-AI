@@ -71,12 +71,11 @@ class _HomeScreenState extends State<HomeScreen> {
       selectedIndex: 4,
     );
   }
+
   void _openSymptomChat() {
-  _openPage(
-    const SymptomChatScreen(),
-    selectedIndex: 0,
-  );
-}
+    _openPage(const SymptomChatScreen(), selectedIndex: 0);
+  }
+
   void _selectTab(int index) {
     switch (index) {
       case 0:
@@ -95,18 +94,6 @@ class _HomeScreenState extends State<HomeScreen> {
         _openProfile();
         break;
     }
-  }
-
-  void _showComingSoon(String feature) {
-    ScaffoldMessenger.of(context)
-      ..hideCurrentSnackBar()
-      ..showSnackBar(
-        SnackBar(
-          content: Text('$feature is coming soon.'),
-          backgroundColor: navy,
-          behavior: SnackBarBehavior.floating,
-        ),
-      );
   }
 
   Future<void> _logout() async {

@@ -672,7 +672,7 @@ class _AddCaseScreenState extends State<AddCaseScreen> {
   Widget _uploadSection() {
     return _section(
       number: '2',
-      title: 'Upload Image / Video',
+      title: 'Upload Image ',
       subtitle: 'Choose clear media for AI analysis',
       child: LayoutBuilder(
         builder: (context, constraints) {
@@ -694,17 +694,6 @@ class _AddCaseScreenState extends State<AddCaseScreen> {
                   color: blue,
                   background: const Color(0xFFEDF6FF),
                   type: 'image',
-                ),
-              ),
-              SizedBox(
-                width: width,
-                child: _uploadOption(
-                  title: 'Upload Video',
-                  subtitle: 'MP4, MOV (Max 50 MB)',
-                  icon: Icons.videocam_rounded,
-                  color: purple,
-                  background: const Color(0xFFF1EDFF),
-                  type: 'video',
                 ),
               ),
             ],
